@@ -1,0 +1,69 @@
+.search-suggestions-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 100;
+  display: none;
+}
+
+.search-suggestions-container.active {
+  display: block;
+}
+
+.search-suggestion {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #e6e6e6;
+  color: #111;
+}
+
+.search-suggestion:hover {
+  background-color: rgb(245, 245, 245);
+  color: #111;
+}
+
+/* Active item when navigating with keyboard */
+.search-suggestion.active {
+  background-color: rgb(240, 242, 242);
+  outline: 2px solid #ffd814;
+  outline-offset: -2px;
+}
+
+.search-suggestion:active {
+  color: #111;
+}
+
+.search-suggestion-title {
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #111;
+}
+
+.search-suggestion-keywords {
+  font-size: 12px;
+  color: #555;
+}
+
+.search-suggestion-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+  float: left;
+}
+
+.search-no-results {
+  padding: 15px;
+  text-align: center;
+  color: #555;
+}
+
+.amazon-header-middle-section {
+  position: relative;
+}
